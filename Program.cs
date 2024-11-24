@@ -121,6 +121,7 @@ static List<int> Extraction(int numbersToExtract)
 
         if (listOfExtractedNumbers.Contains(extractedNumber))
         {
+            i--;
             continue;
         }
         listOfExtractedNumbers.Add(extractedNumber);
