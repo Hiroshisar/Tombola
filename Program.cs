@@ -50,6 +50,7 @@ static List<int> ChooseNumbers()
             else
             {
                 // se la condizione dell'if non è rispettata, avvisa l'utente e diminuisce il contatore per garantire il corretto numero di iterazioni
+                ClearLastLine();
                 Console.WriteLine("Inserire un numero intero tra 1 e 100");
                 i--;
             }
@@ -57,6 +58,7 @@ static List<int> ChooseNumbers()
         catch (Exception)
         {
             // se l'utente non inserisce un numero, evita il blocco e diminuisce il contatore
+            ClearLastLine();
             Console.WriteLine("Inserire un numero intero tra 1 e 100");
             i--;
         }
